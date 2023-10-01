@@ -22,6 +22,6 @@ def dropsearch(request):
     return render(request, 'DropSearch.html')
 
 def get_request(request):
-    printout = request.GET.get('sent_data')
-    print(printout)
-    return JsonResponse({'input': printout})
+    output = request.GET.get('sent_data')
+    print(output)
+    return JsonResponse({'input': output})
